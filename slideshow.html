@@ -2,17 +2,17 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  
+
   <!--[if lt IE 9]>
   <script src="lib/html5shim.js"></script>
-  <![endif]-->  
-  
+  <![endif]-->
+
   <!-- These are some core styles the slideshow app requires -->
   <link rel="stylesheet" href="lib/styles.css" />
-  
+
   <!-- These are the styles you'll add to make the slides look great -->
   <link rel="stylesheet" href="css/styles.css" />
-  
+
   <title>Les Gifs animés !</title>
 </head>
 <body>
@@ -29,7 +29,7 @@
   </header>
 
   <div id="deck">
-    
+
     <!-- Begin slides -->
     <section class="center">
 
@@ -42,13 +42,13 @@
         <p>
         Présenté par Benjamin Clay &amp; Damien Alexandre
         </p>
-      
+
     </section>
 
     <section class="center">
         <h1>Se prononce JIF</h1>
         <h2>Et non pas guif</h2>
-    
+
         <img class="action" src="images/seriously.gif" /><!-- class="action" permet de faire apparaitre après -->
 
         <h2 class="action">Ni JUIF</h2>
@@ -99,6 +99,39 @@
       </div>
     </section>
 
+    <section class="center">
+      <h1>Où les trouver ?</h1>
+
+      <h2>Des sites spécialisés</h2>
+      <ul class="force-list">
+        <li>http://www.reactiongifs.com/</li>
+        <li>http://forgifs.com/</li>
+        <li>http://gifolas-cage.tumblr.com/</li>
+        <li>http://www.jamesvandermemes.com/</li>
+      </ul>
+
+      <img src="images/gifolas.gif" class="" />
+    </section>
+
+    <section class="center">
+      <h1>Où les trouver ?</h1>
+
+      <h2>Les profondeurs de l'interwebz</h2>
+      <p>Reddit : /r/gifs</p>
+      <img src="images/reddit.png" />
+
+      <p><small>Protips : Installer RES !</small></p>
+    </section>
+
+    <section class="center">
+      <h1>Où les trouver ?</h1>
+
+      <h2>Le trou du cul de l'interwebz /!\ NSFW</h2>
+      <p>4chan : /gif, /wsg ou /b/</p>
+      <img src="images/4chan.png" />
+
+      <p><small>Protips : Installer 4chan Chrome Extension !</small></p>
+    </section>
 
     <section class="center">
         <h1>Appliquer la GIF ATTITUDE<small style="display:block;float:right;font-size:0.2em">© C. Porteneuve</small></h1>
@@ -134,20 +167,19 @@
         <p>Sans même tomber dans la facilité avec les bébés.</p>
     </section>
     <!-- /End slides -->
-    
   </div>
   <!-- /deck -->
-  
+
   <script src="lib/jquery-1.5.2.min.js"></script>
-  <script src="lib/jquery.jswipe-0.1.2.js"></script>  
+  <script src="lib/jquery.jswipe-0.1.2.js"></script>
   <script src="lib/htmlSlides.js"></script>
   <script>
     //Do our business when the DOM is ready for us
     $(function() {
-      
+
       //One little option: hideToolbar (boolean; default = false)
       htmlSlides.init({ hideToolbar: true });
-      
+
     });
   </script>
   </body>
