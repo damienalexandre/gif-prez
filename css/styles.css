@@ -23,3 +23,8 @@ ul.force-list {
 ul.force-list li {
 	list-style:square!important;
 }
+
+#deck .freefloat {
+	float: left;
+	margin: 20px;
+}
