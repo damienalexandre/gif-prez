@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  
+  <!--[if lt IE 9]>
+  <script src="lib/html5shim.js"></script>
+  <![endif]-->  
+  
+  <!-- These are some core styles the slideshow app requires -->
+  <link rel="stylesheet" href="lib/styles.css" />
+  
+  <!-- These are the styles you'll add to make the slides look great -->
+  <link rel="stylesheet" href="css/styles.css" />
+  
+  <title>Les Gifs animés !</title>
+</head>
+<body>
+
+  <header>
+    <h1>Les Gifs animés</h1>
+    <nav>
+      <ul>
+        <li><button id="prev-btn" title="Previous slide">Previous Slide</button></li>
+        <li><span id="slide-number"></span>/<span id="slide-total"></span></li>
+        <li><button id="next-btn" title="Next Slide">Next Slide</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="deck">
+    
+    <!-- Begin slides -->
+    <section class="center">
+
+        <h1>Le GIF</h1>
+        <h2>Un format qu'il est bien.</h2>
+
+        <img src="images/home.gif" />
+
+
+        <p>
+        Présenté par Benjamin Clay &amp; Damien Alexandre
+        </p>
+      
+    </section>
+
+    <section class="center">
+        <h1>Se prononce JIF</h1>
+        <h3>Et non pas guif</h3>
+    
+        <img class="action" src="images/seriously.gif" /><!-- class="action" permet de faire apparaitre après -->
+    </section>
+    <!-- /End slides -->
+    
+  </div>
+  <!-- /deck -->
+  
+  <script src="lib/jquery-1.5.2.min.js"></script>
+  <script src="lib/jquery.jswipe-0.1.2.js"></script>  
+  <script src="lib/htmlSlides.js"></script>
+  <script>
+    //Do our business when the DOM is ready for us
+    $(function() {
+      
+      //One little option: hideToolbar (boolean; default = false)
+      htmlSlides.init({ hideToolbar: true });
+      
+    });
+  </script>
+  </body>
+</html>
