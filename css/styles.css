@@ -14,3 +14,12 @@ body{ background:pink; }
 ul, li {
 	list-style:none!important;
 }
+
+ul.force-list {
+	list-style:square!important;
+	text-align:left;
+	margin-left:25%;
+}
+ul.force-list li {
+	list-style:square!important;
+}
