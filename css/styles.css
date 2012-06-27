@@ -28,3 +28,11 @@ ul.force-list li {
 	float: left;
 	margin: 20px;
 }
+
+#deck a {
+	text-decoration:none;
+	color:black;
+}
+#deck a:hover {
+	text-decoration:underline;
+}
