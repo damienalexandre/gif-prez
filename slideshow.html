@@ -112,7 +112,7 @@
         <img src="images/ham3.gif" class="freefloat" /><img src="images/ham3.gif" class="freefloat"  />
         <img src="images/ham3.gif" class="freefloat" /><img src="images/ham3.gif" class="freefloat"  /><img src="images/ham3.gif" class="freefloat"  />
 
-        <audio src="webhamster.wav" controls loop />
+        <audio src="webhamster.wav" id="hamsound" controls loop />
       </div>
 
     </section>
@@ -306,15 +306,17 @@
       <img src="images/rudy-waoh.gif" />
     </section>
 
-
-
     <section class="center">
       <h1>MERCI \o/ Questions ?</h1>
 
       <p>NON on veut des bières !</p>
 
-    </section>
 
+      <img src="images/cat.gif" />
+
+      <audio src="nyan.mp3" id="nyan" controls loop />
+
+    </section>
 
     <!-- /End slides -->
   </div>
@@ -326,6 +328,21 @@
   <script>
     //Do our business when the DOM is ready for us
     $(function() {
+
+      //You can trigger Javascript based on the slide number like this:
+      $('html').bind('newSlide', function(e, id) { 
+        switch(id) {
+          case 5:
+            document.getElementById('hamsound').play()
+            break;
+          case 6:
+            document.getElementById('hamsound').pause()
+            break;
+          case 23:
+            document.getElementById('nyan').play()
+            break;
+        }
+      });
 
       //One little option: hideToolbar (boolean; default = false)
       htmlSlides.init({ hideToolbar: true });

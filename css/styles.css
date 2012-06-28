@@ -30,3 +30,7 @@ ul.force-list li {
 #deck a:hover {
 	text-decoration:underline;
 }
+
+#deck small {
+	font-size:0.6em;
+}
